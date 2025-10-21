@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <dialog id="startMenu">
+        <div>
+            <label for="playerOneName">Player One Name:</label>
+            <input type="text" id="playerOneName" name="playerOneName">
+        </div>
+        <div>
+            <label for="playerTwoName">Player Two Name:</label>
+            <input type="text" id="playerTwoName" name="playerTwoName">
+        </div>
+        <button id="startBtn">Start Game</button>
+    </dialog>
+    <dialog id="winWindow">
+        <p id="winText"></p>
+        <div>
+            <button id="continue">Continue Playing</button>
+            <button id="newGame">New game</button>
+        </div>
+    </dialog>
+    <h1 id="title">Tic-Tac-Toe Game</h1>
+    <div>
+        <p id="text"></p>
+        <div id="board"></div>
+        <div class="scores">
+            <p id="playerOneScore"></p>
+            <p id="playerTwoScore"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

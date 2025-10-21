@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+#startMenu{
+    font-size: 28px;
+}
+
+#startMenu div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+
+#startMenu div input{
+    height: 36px;
+    font-size: 24px;
+}
+
+#winWindow{
+    top:42%;
+}
+
+#winWindow p{
+    font-size: 32px;
+    text-align: center;
+}
+
+#winWindow div{
+    display: flex;
+    gap: 10px;
+}
+
+#startMenu button,#winWindow button{
+    width: 100%;
+    font-size: 26px;
+}
+
+#title{
+    font-size: 46px;
+    text-align: center;
+}
+
+#text{
+    text-align: center;
+    font-size: 34px;
+}
+
+#board{
+    margin: 0 auto;
+    width: 312px;
+    height: 312px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 0;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 90px;
+}
+
+.cellRow{
+    display: flex;
+}
+
+.scores{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.scores *{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
